@@ -1,0 +1,199 @@
+Microsoft Windows [Version 10.0.18362.476]
+
+pranav.verma@PRANAV C:\Users\pranav.verma
+$ cd C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new sln
+
+Welcome to .NET Core 3.0!
+---------------------
+SDK Version: 3.0.100
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+Getting ready...
+The template "Solution File" was created successfully.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dir
+ Volume in drive C is OS
+ Volume Serial Number is 8401-176F
+
+ Directory of C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+
+11-12-2019  01:02    <DIR>          .
+11-12-2019  01:02    <DIR>          ..
+11-12-2019  01:02               540 ReactivitiesAPI.sln
+               1 File(s)            540 bytes
+               2 Dir(s)  115,200,049,152 bytes free
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new classlib -n Domain
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Domain\Domain.csproj...
+  Restore completed in 123.03 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain\Domain.csproj.
+
+Restore succeeded.
+
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dir
+ Volume in drive C is OS
+ Volume Serial Number is 8401-176F
+
+ Directory of C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+
+11-12-2019  01:05    <DIR>          .
+11-12-2019  01:05    <DIR>          ..
+11-12-2019  01:05    <DIR>          Domain
+11-12-2019  01:02               540 ReactivitiesAPI.sln
+               1 File(s)            540 bytes
+               3 Dir(s)  115,198,693,376 bytes free
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd Domain
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain
+$ dir
+ Volume in drive C is OS
+ Volume Serial Number is 8401-176F
+
+ Directory of C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain
+
+11-12-2019  01:05    <DIR>          .
+11-12-2019  01:05    <DIR>          ..
+11-12-2019  01:05                83 Class1.cs
+11-12-2019  01:05               145 Domain.csproj
+11-12-2019  01:05    <DIR>          obj
+               2 File(s)            228 bytes
+               3 Dir(s)  115,198,562,304 bytes free
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new classlib -n Application
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Application\Application.csproj...
+  Restore completed in 81.45 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application\Application.csproj.
+
+Restore succeeded.
+
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new classlib -n Persistence
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Persistence\Persistence.csproj...
+  Restore completed in 81.96 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj.
+
+Restore succeeded.
+
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new webapi -n API
+The template "ASP.NET Core Web API" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on API\API.csproj...
+  Restore completed in 47.15 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj.
+
+Restore succeeded.
+
+
+An update for template pack Microsoft.DotNet.Web.ProjectTemplates.3.0::3.0.0 is available.
+    install command: dotnet new -i Microsoft.DotNet.Web.ProjectTemplates.3.0::3.0.1
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln add Domain/
+Project `Domain\Domain.csproj` added to the solution.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln add Application/
+Project `Application\Application.csproj` added to the solution.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln add Persistence/
+Project `Persistence\Persistence.csproj` added to the solution.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln add API/
+Project `API\API.csproj` added to the solution.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln list
+Project(s)
+----------
+Domain\Domain.csproj
+Application\Application.csproj
+Persistence\Persistence.csproj
+API\API.csproj
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd Application
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application
+$ dotnet add reference ../Domain/
+Reference `..\Domain\Domain.csproj` added to the project.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application
+$ dotnet add reference ../Persistence/
+Reference `..\Persistence\Persistence.csproj` added to the project.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd API
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ dotnet add reference ../Application/
+Reference `..\Application\Application.csproj` added to the project.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd Domain
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd Persistence
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence
+$ dotnet add reference ../Domain/
+Reference `..\Domain\Domain.csproj` added to the project.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ code .
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$
