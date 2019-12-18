@@ -196,4 +196,11 @@ pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\React
 $ code .
 
 pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
-$
+$ dotnet run -p API/ 
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet restore
+
+
+// For Migrating All My Class Libraries From Dotnet Core 2.0 to 2.1 we need to change in the csproj file to all the 
+class Libraries

@@ -31,7 +31,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +61,198 @@
               "privateAssets": "none"
             },
             "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pranav.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pranav.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pranav.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
