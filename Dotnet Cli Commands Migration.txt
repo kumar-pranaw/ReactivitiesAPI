@@ -1,0 +1,1023 @@
+Microsoft Windows [Version 10.0.18362.476]
+
+pranav.verma@PRANAV C:\Users\pranav.verma
+$ cd C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet tool install --global dotnet-ef
+error NU1202: Package dotnet-ef 3.1.0 is not compatible with netcoreapp3.0 (.NETCoreApp,Version=v3.0) / any. Package dotnet-ef 3.1.0 supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1) / any
+The tool package could not be restored.
+Tool 'dotnet-ef' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef
+Could not execute because the specified command or file was not found.
+Possible reasons for this include:
+  * You misspelled a built-in dotnet command.
+  * You intended to execute a .NET Core program, but dotnet-ef does not exist.
+  * You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet tool install --global dotnet-ef --version 3.0.0
+You can invoke the tool using the following command: dotnet-ef
+Tool 'dotnet-ef' (version '3.0.0') was successfully installed.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef
+
+                     _/\__
+               ---==/    \\
+         ___  ___   |.    \|\
+        | __|| __|  |  )   \\\
+        | _| | _|   \_/ |  //|\\
+        |___||_|       /   \\\/\\
+
+Entity Framework Core .NET Command-line Tools 3.0.0
+
+Usage: dotnet ef [options] [command]
+
+Options:
+  --version        Show version information
+  -h|--help        Show help information
+  -v|--verbose     Show verbose output.
+  --no-color       Don't colorize output.
+  --prefix-output  Prefix output with level.
+
+Commands:
+  database    Commands to manage the database.
+  dbcontext   Commands to manage DbContext types.
+  migrations  Commands to manage migrations.
+
+Use "dotnet ef [command] --help" for more information about a command.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef migrations add InitialCreate -p Persistence/ -s API/
+Your startup project 'API' doesn't reference Microsoft.EntityFrameworkCore.Design. This package is required for the Entity Framework Core Tools to work. Ensure your startup project is correct, install the package, and try again.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef migrations add InitialCreate -p Persistence/ -s API/
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+Done. To undo this action, use 'ef migrations remove'
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet watch run
+watch : Could not find a MSBuild project file in 'C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI'. Specify which project to use with the --project option.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd API
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ dotnet watch run
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA journal_mode = 'wal';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+          "ProductVersion" TEXT NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20191218192645_InitialCreate'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Values" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Values" PRIMARY KEY AUTOINCREMENT,
+          "Name" TEXT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20191218192645_InitialCreate', '3.0.0');
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+DataContext.cs(16,5): error CS1519: Invalid token '}' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(16,5): error CS1519: Invalid token '}' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(16,5): error CS1519: Invalid token '}' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(15,48): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(15,62): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(15,63): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+DataContext.cs(17,27): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(17,33): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(17,35): error CS1026: ) expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(17,35): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(17,36): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(17,36): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(17,44): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(18,20): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(19,26): error CS1526: A new expression requires (), [], or {} after type [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+DataContext.cs(19,38): error CS1525: Invalid expression term '}' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(22,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(22,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(22,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\DataContext.cs
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+DataContext.cs(22,14): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Shutdown requested. Press Ctrl+C again to force exit.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef migrations add seedValue -p Persistence/ -s API/
+Build failed.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet build
+Microsoft (R) Build Engine version 16.3.0+0f4c62fea for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 12.6 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain\Domain.csproj.
+  Restore completed in 16.26 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj.
+  Restore completed in 16.41 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj.
+  Restore completed in 16.42 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application\Application.csproj.
+  Domain -> C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain\bin\Debug\netstandard2.1\Domain.dll
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+
+Build FAILED.
+
+DataContext.cs(20,50): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.93
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet build
+Microsoft (R) Build Engine version 16.3.0+0f4c62fea for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 12.63 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain\Domain.csproj.
+  Restore completed in 16.27 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj.
+  Restore completed in 16.44 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application\Application.csproj.
+  Restore completed in 16.45 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\Persistence.csproj.
+  Domain -> C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Domain\bin\Debug\netstandard2.1\Domain.dll
+  Persistence -> C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Persistence\bin\Debug\netstandard2.1\Persistence.dll
+  Application -> C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Application\bin\Debug\netstandard2.1\Application.dll
+  API -> C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\API.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.34
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet ef migrations add seedValue -p Persistence/ -s API/
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+Done. To undo this action, use 'ef migrations remove'
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd API
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ dotnet watch run
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20191218194741_seedValue'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Values" ("Id", "Name")
+      VALUES (1, 'Value 101');
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Values" ("Id", "Name")
+      VALUES (2, 'Value 102');
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Values" ("Id", "Name")
+      VALUES (3, 'Value 103');
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20191218194741_seedValue', '3.0.0');
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(10,43): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(10,33): error CS0246: The type or namespace name 'DataContext' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(12,16): error CS0107: More than one protection modifier [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(12,16): error CS0106: The modifier 'readonly' is not valid for this item [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(12,16): error CS0107: More than one protection modifier [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(12,9): error CS1585: Member modifier 'public' must precede the member type and name [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(11,38): warning CS0169: The field 'ValuesController._context' is never used [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(14,18): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(14,18): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(14,28): error CS1525: Invalid expression term '}' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(14,28): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(14,28): error CS1525: Invalid expression term '}' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(14,28): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(13,18): error CS1061: 'ValuesController' does not contain a definition for '_context' and no accessible extension method '_context' accepting a first argument of type 'ValuesController' could be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(19,41): error CS0246: The type or namespace name 'Value' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(22,20): error CS0029: Cannot implicitly convert type 'string[]' to 'Microsoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<Domain.Value>>' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(22,24): error CS1525: Invalid expression term 'return' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(22,24): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(22,43): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(22,47): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(22,41): error CS1061: 'DbSet<Value>' does not contain a definition for 'ToList' and no accessible extension method 'ToList' accepting a first argument of type 'DbSet<Value>' could be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(23,20): error CS0029: Cannot implicitly convert type 'string[]' to 'Microsoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<Domain.Value>>' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(24,20): error CS0029: Cannot implicitly convert type 'string[]' to 'Microsoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<Domain.Value>>' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(24,21): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(21,51): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,52): error CS1003: Syntax error, '>' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,52): error CS1003: Syntax error, '(' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,57): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,57): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,60): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,63): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,63): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,64): error CS8124: Tuple must contain at least two elements. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,65): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,65): error CS1026: ) expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(21,61): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,64): error CS1003: Syntax error, '>' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(21,65): error CS8124: Tuple must contain at least two elements. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(22,9): error CS1519: Invalid token '{' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(24,13): error CS1519: Invalid token 'return' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(24,28): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(52,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(21,22): error CS0246: The type or namespace name 'Task<>' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(22,61): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(24,25): error CS1061: 'List<Value>' does not contain a definition for 'GetAwaiter' and no accessible extension method 'GetAwaiter' accepting a first argument of type 'List<Value>' could be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(24,47): error CS1061: 'DbSet<Value>' does not contain a definition for 'ToListA' and no accessible extension method 'ToListA' accepting a first argument of type 'DbSet<Value>' could be found (are you missing a using directive or an assembly reference?) [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(31,60): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,63): error CS1003: Syntax error, '>' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,70): error CS8124: Tuple must contain at least two elements. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(32,9): error CS1519: Invalid token '{' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(54,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(31,48): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,51): error CS1003: Syntax error, '>' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,58): error CS8124: Tuple must contain at least two elements. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(32,9): error CS1519: Invalid token '{' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(54,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(31,47): error CS1003: Syntax error, ',' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,50): error CS1003: Syntax error, '>' expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,57): error CS8124: Tuple must contain at least two elements. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(32,9): error CS1519: Invalid token '{' in class, struct, or interface member declaration [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(54,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,20): error CS0029: Cannot implicitly convert type 'string' to 'Microsoft.AspNetCore.Mvc.ActionResult<Domain.Value>' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(31,48): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,40): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(33,40): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,47): error CS1001: Identifier expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(33,47): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,51): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,51): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+Controllers\ValuesController.cs(33,67): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,50): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(33,60): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+Controllers\ValuesController.cs(34,19): error CS1525: Invalid expression term '}' [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+Controllers\ValuesController.cs(34,19): error CS1002: ; expected [C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\API.csproj]
+
+The build failed. Fix the build errors and run again.
+watch : Exited with error code 1
+watch : Waiting for a file to change before restarting dotnet...
+watch : Started
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+watch : Exited
+watch : File changed: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\Controllers\ValuesController.cs
+watch : Started
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Domain.Value]]] Get() on controller DatingApp.API.Controllers.ValuesController (API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "v"."Id", "v"."Name"
+      FROM "Values" AS "v"
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain.Value, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action DatingApp.API.Controllers.ValuesController.Get (API) in 129.8212ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 166.08790000000002ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values/1
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Domain.Value]] Get(Int32) on controller DatingApp.API.Controllers.ValuesController (API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "v"."Id", "v"."Name"
+      FROM "Values" AS "v"
+      WHERE ("v"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Domain.Value'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action DatingApp.API.Controllers.ValuesController.Get (API) in 74.223ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 84.09920000000001ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values/4
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Domain.Value]] Get(Int32) on controller DatingApp.API.Controllers.ValuesController (API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "v"."Id", "v"."Name"
+      FROM "Values" AS "v"
+      WHERE ("v"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'null'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action DatingApp.API.Controllers.ValuesController.Get (API) in 11.3918ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 13.3017ms 204
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values/2
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Domain.Value]] Get(Int32) on controller DatingApp.API.Controllers.ValuesController (API).
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "v"."Id", "v"."Name"
+      FROM "Values" AS "v"
+      WHERE ("v"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Domain.Value'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action DatingApp.API.Controllers.ValuesController.Get (API) in 6.9671ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'DatingApp.API.Controllers.ValuesController.Get (API)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 7.9622ms 200 application/json; charset=utf-8
