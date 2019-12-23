@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import { Header, Icon, List } from 'semantic-ui-react';
+import React, {useState, useEffect, Fragment} from 'react';
+import { Container } from 'semantic-ui-react';
 import './styles.css';
 import axios from 'axios';
 import {IActivity} from '../model/activity';
+import NavBar from '../../features/nav/NavBar';
+import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard'
 
 
 const App = () => {
@@ -17,20 +19,12 @@ const App = () => {
   }, []);
 
     return (
-      <div>
-          <Header as='h2'>
-             <Icon name='plug' />
-             <Header.Content>Reactivities</Header.Content>
-          </Header>
-          <List>
-              {activities.map((activity) => (
-                <List.Item key={activity.id}> {activity.title}  </List.Item>))}
-          </List>
-
-         <ul>
-          
-         </ul>
-      </div>
+        <Fragment>
+          <NavBar />
+          <Container style={{marginTop: '7em'}}>
+           <ActivityDashboard activities = {activities}></ActivityDashboard>
+          </Container>
+        </Fragment>
     );
 }
 
