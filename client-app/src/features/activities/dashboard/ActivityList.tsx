@@ -5,7 +5,7 @@ import { IActivity } from '../../../app/model/activity'
 interface IProps {
     activities: IActivity[];
     selectActivity: (id: string) => void;
-    selectedActivity: IActivity;
+    selectedActivity: IActivity | null;
     deleteActivity : (e: SyntheticEvent<HTMLButtonElement>, id: string) => void;
     submitting: boolean,
     target: string,
