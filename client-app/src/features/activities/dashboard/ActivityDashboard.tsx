@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 import {Grid, GridColumn} from 'semantic-ui-react';
 import { IActivity } from '../../../app/model/activity';
 import ActivityList from './ActivityList';
@@ -14,7 +14,9 @@ interface IProps {
     setSelectedActivity: (activity: IActivity | null) => void;
     createActivity: (activity: IActivity) => void;
     editActivity: (activity: IActivity) => void;
-    deleteActivity: (id: string) => void;
+    deleteActivity: (e: SyntheticEvent<HTMLButtonElement>, id: string) => void;
+    submitting: boolean;
+    target: string;
 }
 
 const ActivityDashboard: React.FC<IProps> = ({
@@ -26,7 +28,9 @@ const ActivityDashboard: React.FC<IProps> = ({
                                       setSelectedActivity,
                                       createActivity,
                                       editActivity,
-                                      deleteActivity}) => {
+                                      deleteActivity,
+                                      submitting,
+                                      target}) => {
     return (
       <Grid>
           <Grid.Column width= {10}>
@@ -34,7 +38,9 @@ const ActivityDashboard: React.FC<IProps> = ({
                   activities = {activities} 
                   selectActivity = {selectActivity} 
                   selectedActivity = {selectedActivity}  
-                  deleteActivity = {deleteActivity} 
+                  deleteActivity = {deleteActivity}
+                  target = {target}
+                  submitting = {submitting}
               />
           </Grid.Column>
           <GridColumn width = {6}>
@@ -51,6 +57,7 @@ const ActivityDashboard: React.FC<IProps> = ({
                                 activity = {selectedActivity}
                                 createActivity = {createActivity}
                                 editActivity = {editActivity}
+                                submitting = {submitting}
                                 >
                         </ActivityForm>}
           </GridColumn>
