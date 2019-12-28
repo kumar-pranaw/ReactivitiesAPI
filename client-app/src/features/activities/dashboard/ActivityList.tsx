@@ -6,23 +6,22 @@ import ActivityListItem from './ActivityListItem';
 
 const ActivityList: React.FC = () => {
   const activityStore = useContext(ActivityStore);
-  const {activitiesByDate} = activityStore;
+  const { activitiesByDate } = activityStore;
   return (
     <Fragment>
-      {activitiesByDate.map(([group, activities]) =>(
+      {activitiesByDate.map(([group, activities]) => (
         <Fragment key={group}>
-        <Label  size='large' color='blue'>
-          {group}
-        </Label>
-        <Item.Group divided>
-        {activities.map(activity => (
-            <ActivityListItem key={activity.id} activity = {activity}></ActivityListItem>
-        ))}
-      </Item.Group>
-    </Fragment>
+          <Label size='large' color='blue'>
+            {group}
+          </Label>
+          <Item.Group divided>
+            {activities.map(activity => (
+              <ActivityListItem key={activity.id} activity={activity} />
+            ))}
+          </Item.Group>
+        </Fragment>
       ))}
     </Fragment>
-   
   );
 };
 
