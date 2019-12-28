@@ -53,3 +53,9 @@ C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\D
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\FluentValidation.AspNetCore.dll
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\API.StaticWebAssets.xml
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll

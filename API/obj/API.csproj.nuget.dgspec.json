@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj": {}
+    "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -74,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -102,11 +106,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -148,14 +152,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -186,6 +190,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -205,14 +215,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -233,8 +243,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj"
               }
             }
           }
