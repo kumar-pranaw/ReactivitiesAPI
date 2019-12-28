@@ -12,6 +12,13 @@ using Application.Create;
 using API.Middleware;
 using Domain;
 using Microsoft.AspNetCore.Identity;
+using Infrastructure.Security;
+using Application.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace API
 {
@@ -39,7 +46,10 @@ namespace API
             });
              
             services.AddMediatR(typeof(List.Handler).Assembly); 
-            services.AddControllers().AddFluentValidation(cfg => {
+            services.AddControllers(opt => {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                opt.Filters.Add(new AuthorizeFilter(policy));
+            }).AddFluentValidation(cfg => {
                 cfg.RegisterValidatorsFromAssemblyContaining<Create>();
             });
 
@@ -48,7 +58,20 @@ namespace API
             identityBuilder.AddEntityFrameworkStores<DataContext>();
             identityBuilder.AddSignInManager<SignInManager<AppUser>>();
             
-            services.AddAuthentication();
+            services.AddScoped<IJwtGenerator, JwtGenerator>();
+            services.AddScoped<IUserAccessor, UserAccessor>();
+            
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["TokenKey"]));
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                        .AddJwtBearer(opt => {
+                            opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                            {
+                                ValidateIssuerSigningKey = true,
+                                IssuerSigningKey = key,
+                                ValidateAudience = false,
+                                ValidateIssuer = false
+                            };
+                        });
 
         }
 
@@ -64,6 +87,7 @@ namespace API
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             

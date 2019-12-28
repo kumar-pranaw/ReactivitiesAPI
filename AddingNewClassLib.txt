@@ -1,0 +1,35 @@
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet new classlib -n Infrastructure
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Infrastructure\Infrastructure.csproj...
+  Restore completed in 179.18 ms for C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Infrastructure\Infrastructure.csproj.
+
+Restore succeeded.
+
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ dotnet sln add Infrastructure/
+Project `Infrastructure\Infrastructure.csproj` added to the solution.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd Infrastructure
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Infrastructure
+$ dotnet add reference ../Application/
+Reference `..\Application\Application.csproj` added to the project.
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\Infrastructure
+$ cd..
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI
+$ cd API/
+
+pranav.verma@PRANAV C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API
+$ dotnet add reference ../Infrastructure/
+Reference `..\Infrastructure\Infrastructure.csproj` added to the project.
