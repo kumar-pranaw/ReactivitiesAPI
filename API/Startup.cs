@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Persistence;
 using Application.Activities;
+using FluentValidation.AspNetCore;
+using Application.Create;
+using API.Middleware;
 
 namespace API
 {
@@ -34,7 +37,9 @@ namespace API
             });
              
             services.AddMediatR(typeof(List.Handler).Assembly); 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation(cfg => {
+                cfg.RegisterValidatorsFromAssemblyContaining<Create>();
+            });
             
         }
 
@@ -43,8 +48,10 @@ namespace API
         {
             if (env.IsDevelopment())
             { 
+                app.UseMiddleware<ErrorHandlingMiddleware>();
                 {
-                     app.UseDeveloperExceptionPage();
+                    //  app.UseDeveloperExceptionPage();
+
                 }
 
                      app.UseRouting();
@@ -52,7 +59,6 @@ namespace API
             }
 
             app.UseHttpsRedirection();
-
 
             app.UseAuthorization();
 

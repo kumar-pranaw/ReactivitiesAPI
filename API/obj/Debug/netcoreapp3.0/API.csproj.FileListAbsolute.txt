@@ -49,3 +49,7 @@ C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\D
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\MediatR.dll
 C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\FluentValidation.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\FluentValidation.AspNetCore.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.MvcApplicationPartsAssemblyInfo.cs
