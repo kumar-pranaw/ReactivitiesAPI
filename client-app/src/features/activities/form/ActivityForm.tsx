@@ -1,6 +1,5 @@
 import React, { useState,useContext, useEffect } from 'react';
 import { ActivityFormValues } from '../../../app/models/activity';
-import ActivityStore from '../../../app/stores/activityStore';
 import { observer } from 'mobx-react-lite';
 import { RouteComponentProps } from 'react-router';
 import { Segment, Form, Button, Grid } from 'semantic-ui-react';
@@ -13,6 +12,7 @@ import {combineDateAndTime} from '../../../app/common/util/util';
 import DateInput from '../../../app/common/form/DateInput';
 import uuid from 'uuid';
 import {combineValidators, isRequired, composeValidators, hasLengthGreaterThan} from 'revalidate';
+import { RootStoreContext } from '../../../app/stores/rootStore';
 
 interface DetailParams {
   id: string;
@@ -35,13 +35,13 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
   match,
   history
 }) => {
-  const activityStore = useContext(ActivityStore);
+  const rootStore = useContext(RootStoreContext);
   const {
     createActivity,
     editActivity,
     submitting,
     loadActivity
-  } = activityStore;
+  } = rootStore.activityStore;
 
   const [activity, setActivity] = useState(new ActivityFormValues());
   const [loading, setLoading] = useState(false);
