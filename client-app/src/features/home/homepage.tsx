@@ -3,6 +3,7 @@ import { Container, Segment, Header, Button, Image } from 'semantic-ui-react';
 import { RootStoreContext } from '../../app/stores/rootStore';
 import LoginForm from '../user/LoginForm';
 import RegisterForm from '../user/RegisterForm';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const rootStore = useContext(RootStoreContext);
@@ -23,7 +24,7 @@ const HomePage = () => {
         {isLoggedIn && user ?(
         <Fragment>
            <Header as='h2' inverted content={`Welcome back ${user.displayName}`} />
-            <Button  size='huge' inverted>
+            <Button as ={Link} to={`/activities`} size='huge' inverted>
               Go to activities!
             </Button>
         </Fragment>) : (
