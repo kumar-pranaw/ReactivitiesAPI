@@ -138,3 +138,7 @@ E:\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.RazorTargetAssemblyInfo.cache
 E:\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.csproj.CopyComplete
 E:\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.dll
 E:\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.pdb
+E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.dll
+E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Castle.Core.dll
+E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll

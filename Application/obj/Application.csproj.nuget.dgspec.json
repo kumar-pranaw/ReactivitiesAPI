@@ -49,6 +49,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[8.6.0, )"
@@ -69,9 +73,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -185,6 +186,10 @@
         "netcoreapp3.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
