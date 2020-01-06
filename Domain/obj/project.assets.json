@@ -742,23 +742,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LovPranav\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\pranav.verma\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ReactivitiesAPI\\Domain\\Domain.csproj",
+      "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "E:\\ReactivitiesAPI\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\LovPranav\\.nuget\\packages\\",
-      "outputPath": "E:\\ReactivitiesAPI\\Domain\\obj\\",
+      "projectPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\pranav.verma\\Documents\\React With Dotnet Core\\ReactivitiesAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LovPranav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pranav.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

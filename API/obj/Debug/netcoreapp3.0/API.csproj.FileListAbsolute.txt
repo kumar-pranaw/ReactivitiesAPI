@@ -142,3 +142,7 @@ E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.dll
 E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Castle.Core.dll
 E:\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Castle.Core.dll
+C:\Users\pranav.verma\Documents\React With Dotnet Core\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
