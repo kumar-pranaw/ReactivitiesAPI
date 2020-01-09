@@ -220,3 +220,4 @@ C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.csproj.CopyComplete
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.dll
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.pdb
+C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\CloudinaryDotNet.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -113,11 +113,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -163,14 +163,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -254,8 +254,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -269,6 +269,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.9.1, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[5.6.0, )"
@@ -293,14 +297,14 @@
         }
       }
     },
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -321,8 +325,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
               }
             }
           }
