@@ -41,45 +41,44 @@ export default class ActivityStore {
     this.loadingInitial = true;
     try {
       const activities = await agent.Activities.list();
-      console.log(activities);
       runInAction('loading activities', () => {
         activities.forEach(activity => {
           setActivityProps(activity, this.rootStore.userStore.user!);
           this.activityRegistry.set(activity.id, activity);
         });
         this.loadingInitial = false;
-      })
+      });
     } catch (error) {
       runInAction('load activities error', () => {
         this.loadingInitial = false;
-      })
+      });
     }
   };
 
   @action loadActivity = async (id: string) => {
     let activity = this.getActivity(id);
     if (activity) {
-      this.activity = activity; 
+      this.activity = activity;
       return activity;
     } else {
       this.loadingInitial = true;
       try {
         activity = await agent.Activities.details(id);
-        runInAction('getting activity',() => {
+        runInAction('getting activity', () => {
           setActivityProps(activity, this.rootStore.userStore.user!);
           this.activity = activity;
           this.activityRegistry.set(activity.id, activity);
           this.loadingInitial = false;
-        })
+        });
         return activity;
       } catch (error) {
         runInAction('get activity error', () => {
           this.loadingInitial = false;
-        })
+        });
         console.log(error);
       }
     }
-  }
+  };
 
   @action clearActivity = () => {
     this.activity = null;

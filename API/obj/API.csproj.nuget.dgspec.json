@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
               },
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -73,6 +73,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,18 +91,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -113,11 +123,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -154,23 +164,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -217,23 +233,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -254,8 +276,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -288,23 +310,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -325,8 +353,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -363,12 +391,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

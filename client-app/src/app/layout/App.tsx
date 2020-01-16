@@ -9,9 +9,10 @@ import {
   RouteComponentProps,
   Switch
 } from 'react-router-dom';
-import HomePage from '../../features/home/HomePage';
+import Homepage from '../../features/home/Homepage';
 import ActivityForm from '../../features/activities/form/ActivityForm';
 import ActivityDetails from '../../features/activities/details/ActivityDetails';
+import ProfilePage from '../../features/profiles/ProfilePage';
 import NotFound from './NotFound';
 import {ToastContainer} from 'react-toastify';
 import LoginForm from '../../features/user/LoginForm';
@@ -39,7 +40,7 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
     <Fragment>
       <ModalContainer></ModalContainer>
       <ToastContainer position='bottom-right' />
-      <Route exact path='/' component={HomePage} />
+      <Route exact path='/' component={Homepage} />
       <Route
         path={'/(.+)'}
         render={() => (
@@ -54,7 +55,8 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
                   path={['/createActivity', '/manage/:id']}
                   component={ActivityForm}
                 />
-                 <Route path='/login' component={LoginForm} />
+                 <Route path='/profile/:username' component = {ProfilePage} />>
+                 {/* <Route path='/login' component={LoginForm} /> */}
                 <Route component={NotFound} />
               </Switch>
             </Container>
