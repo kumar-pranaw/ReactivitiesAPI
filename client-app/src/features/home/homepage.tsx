@@ -5,7 +5,7 @@ import LoginForm from '../user/LoginForm';
 import RegisterForm from '../user/RegisterForm';
 import { Link } from 'react-router-dom';
 
-const Homepage = () => {
+const HomePage = () => {
   const rootStore = useContext(RootStoreContext);
   const {isLoggedIn, user} = rootStore.userStore; 
   const {openModal} = rootStore.modalStore;
@@ -44,4 +44,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;
