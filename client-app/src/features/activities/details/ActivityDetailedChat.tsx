@@ -18,7 +18,6 @@ const ActivityDetailedChat = () => {
     }
   } ,[createHubConnection, stopHubConnection, activity])
 
-
   return (
     <Fragment>
       <Segment
@@ -48,8 +47,8 @@ const ActivityDetailedChat = () => {
           ))}
          <FinalForm
           onSubmit = {addComment}
-          render={({handleSubmit, submitting, form}) => (
-            <Form onSubmit={() =>handleSubmit()!.then(() => form.reset)}>
+          render={({handleSubmit, submitting, form, }) => (
+            <Form onSubmit={() =>handleSubmit()!.then(() => form.reset())}>
             <Field name='body' component={TextAreaInput} rows={2} placeholder='Add Your Comment'/>
             <Button
               content='Add Reply'
