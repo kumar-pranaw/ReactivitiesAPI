@@ -50,15 +50,22 @@ export default class ActivityStore {
     })
   }
 
-  @action stopHubConnection = () => {
-    this.hubConnection!.invoke('RemoveFromGroup', this.activity!.id)
-    .then(() => {
-      this.hubConnection!.stop();
-    })
-    .then(() => console.log('Connection Stopped'))
-    .catch(err=> console.log(err))
+  // @action stopHubConnection = () => {
     
-
+  //   this.hubConnection!.invoke('RemoveFromGroup', this.activity!.id)
+  //   .then(() => {
+  //     this.hubConnection!.stop();
+  //   })
+  //   .then(() => console.log('Connection Stopped')).then(() => {
+  //     runInAction(() => {
+  //       this.activity = null
+  //     })
+  //   })
+  //   .catch(err=> console.log(err))
+  // }
+  
+  @action stopHubConnection = () => {
+    this.hubConnection!.stop()
   }
 
   @action addComment = async (values: any) => {
