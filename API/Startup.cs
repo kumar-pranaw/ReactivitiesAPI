@@ -130,6 +130,8 @@ namespace API
             app.UseMiddleware<ErrorHandlingMiddleware>();
             if (env.IsDevelopment())
             {
+                app.UseDefaultFiles();
+                app.UseStaticFiles();
                 app.UseRouting();
                 app.UseCors("CorsPolicy");
             }
@@ -145,6 +147,7 @@ namespace API
                 //endpoints.
                 endpoints.MapControllers().RequireCors("CorsPolicy");
                 endpoints.MapHub<ChatHub>("/chat");
+                endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }

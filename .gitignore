@@ -7,3 +7,4 @@ appsettings.json
 /.vs/ReactivitiesAPI/v16
 /API/reactivities.db-wal
 /API/reactivities.db-shm
+wwwroot
