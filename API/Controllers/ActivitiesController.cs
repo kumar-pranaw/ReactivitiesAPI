@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Application.Activities;
 using Application.Create;
-using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +12,9 @@ namespace API.Controllers
     public class ActivitiesController : BaseController
     {
         [HttpGet]
-        public async Task<ActionResult<ActivitiesEnvelope>> List(int? limit, int? offset)
+        public async Task<ActionResult<ActivitiesEnvelope>> List(int? limit, int? offset, bool isGoing, bool isHost, DateTime? startDate)
         {
-            return await Mediator.Send(new Query(limit, offset));
+            return await Mediator.Send(new Query(limit, offset, isGoing, isHost,startDate));
         }
 
         [HttpGet("{id}")]
