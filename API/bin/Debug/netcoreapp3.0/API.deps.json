@@ -33,6 +33,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
+          "NWebsec.AspNetCore.Middleware": "2.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -63,12 +64,12 @@
           "Microsoft.AspNetCore.Hosting": "3.0.0.0",
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Html.Abstractions.Reference": "3.0.0.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "3.0.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions.Reference": "3.0.0.0",
           "Microsoft.AspNetCore.Http.Connections.Common": "3.0.0.0",
           "Microsoft.AspNetCore.Http.Connections": "3.0.0.0",
           "Microsoft.AspNetCore.Http": "3.0.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "3.0.0.0",
-          "Microsoft.AspNetCore.Http.Features": "3.0.0.0",
+          "Microsoft.AspNetCore.Http.Features.Reference": "3.0.0.0",
           "Microsoft.AspNetCore.HttpOverrides": "3.0.0.0",
           "Microsoft.AspNetCore.HttpsPolicy": "3.0.0.0",
           "Microsoft.AspNetCore.Identity": "3.0.0.0",
@@ -483,6 +484,17 @@
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "4.5.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.0.2",
+          "System.Text.Encodings.Web": "4.5.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0"
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.0.0": {
@@ -1295,6 +1307,17 @@
           "System.Security.Principal.Windows": "4.5.0"
         }
       },
+      "MySqlConnector/0.61.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {
+            "assemblyVersion": "0.61.0.0",
+            "fileVersion": "0.61.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -1366,6 +1389,66 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NWebsec.AspNetCore.Core/2.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NWebsec.AspNetCore.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NWebsec.AspNetCore.Core.dll": {}
+        }
+      },
+      "NWebsec.AspNetCore.Middleware/2.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2",
+          "NWebsec.AspNetCore.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NWebsec.AspNetCore.Middleware.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NWebsec.AspNetCore.Middleware.dll": {}
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/3.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "3.0.0",
+          "MySqlConnector": "0.61.0",
+          "Pomelo.JsonObject": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {}
+        }
+      },
+      "Pomelo.JsonObject/2.2.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.JsonObject.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.JsonObject.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2577,7 +2660,9 @@
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.0.0",
           "Microsoft.EntityFrameworkCore.Proxies": "3.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "3.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "3.0.0"
         },
         "runtime": {
           "Persistence.dll": {}
@@ -2766,7 +2851,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Abstractions/3.0.0.0": {
+      "Microsoft.AspNetCore.Http.Abstractions.Reference/3.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Abstractions.dll": {}
         },
@@ -2796,7 +2881,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Features/3.0.0.0": {
+      "Microsoft.AspNetCore.Http.Features.Reference/3.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Features.dll": {}
         },
@@ -4377,6 +4462,20 @@
       "path": "microsoft.aspnetcore.html.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Http.Abstractions/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yQM9JzPAExsxTqvJBBr3yC+6XyOETi2T/eOOBjrOOnYgQOO+7M7J8VvAW0wQID9zh7QqWO6kh3BGCT/aqvydtg==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.0.2",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1U5fPSOtIq+cPuqJTjN+EFN3dWn4ptSjybd8minSbyhy0oXr8ujYla86kb9kM3rddUBgrGCyTp/hf0/tMZab+g==",
+      "path": "microsoft.aspnetcore.http.features/2.0.2",
+      "hashPath": "microsoft.aspnetcore.http.features.2.0.2.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4797,6 +4896,13 @@
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
+    "MySqlConnector/0.61.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E01yibVzCkVOmhNsUb+B4amjQKfKFlGiR1huNd6Q8aTCqBrACo0I3JMKvJBMpZfYhAsR8bqB9496PwcGpr+LuQ==",
+      "path": "mysqlconnector/0.61.0",
+      "hashPath": "mysqlconnector.0.61.0.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -4817,6 +4923,34 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "NWebsec.AspNetCore.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rBzLHzTQx7X3vcLbhcHPVgNUALl1mb2zoiIqNw/M7z4lda7WkvMbsHrb4+hh1lZVgeYp4qZwDbO8gAoPdnXmrQ==",
+      "path": "nwebsec.aspnetcore.core/2.0.0",
+      "hashPath": "nwebsec.aspnetcore.core.2.0.0.nupkg.sha512"
+    },
+    "NWebsec.AspNetCore.Middleware/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5PN4h7BLS9b4Hz6own0L1DqVrhpDnUKQaHDJGgkZz2efvZ9YwfAPE1yW7hVCpzNjLBYG3EV3xXWwIg0M5mXZUA==",
+      "path": "nwebsec.aspnetcore.middleware/2.0.0",
+      "hashPath": "nwebsec.aspnetcore.middleware.2.0.0.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JybFRUYDdDd09Td/ZyUoKk/xJBx5KF5HT00B1Il2DODalTvO3L6Wlo0qo28e/Ibk6NY30EybI0H2ceDE4u0Nyw==",
+      "path": "pomelo.entityframeworkcore.mysql/3.0.0",
+      "hashPath": "pomelo.entityframeworkcore.mysql.3.0.0.nupkg.sha512"
+    },
+    "Pomelo.JsonObject/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dfe8owsB+u9amQhZHKCPy2YiIt9tK4iX3dBoSwKlNd2cbi7Yh38XU93LjlYVJ+8HhxS9UgDoUbhYEt3jXTxBRQ==",
+      "path": "pomelo.jsonobject/2.2.0",
+      "hashPath": "pomelo.jsonobject.2.2.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -5779,7 +5913,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Abstractions/3.0.0.0": {
+    "Microsoft.AspNetCore.Http.Abstractions.Reference/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5804,7 +5938,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Features/3.0.0.0": {
+    "Microsoft.AspNetCore.Http.Features.Reference/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

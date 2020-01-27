@@ -24,7 +24,7 @@ const LoginForm = () => {
         validate = {validate}
              render = {({handleSubmit, submitting, submitError, invalid, pristine, dirtySinceLastSubmit}) => (
                  <Form onSubmit={handleSubmit} error>
-                     <Header as ='h2' content = 'Login to CodeStratos' color='teal' textAlign='center'/>
+                     <Header as ='h2' content = 'Login to Lets Meetup' color='teal' textAlign='center'/>
                      <Field name='email' component = {TextInput} placeholder='Email'/>
                      <Field name='password' component = {TextInput} type='password' placeholder='Password'/>
                      {submitError && !dirtySinceLastSubmit && (<ErrorMessage error ={submitError} text='Invalid email or password'></ErrorMessage>)} 

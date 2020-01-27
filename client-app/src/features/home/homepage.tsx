@@ -20,7 +20,7 @@ const HomePage = () => {
             alt='logo'
             style={{ marginBottom: 12 }}
           />
-          CodeStratos
+          Let's Meetup
         </Header>
         {isLoggedIn && user && token ?(
         <Fragment>
@@ -30,7 +30,7 @@ const HomePage = () => {
             </Button>
         </Fragment>) : (
           <Fragment>
-           <Header as='h2' inverted content='Welcome to CodeStratos' />
+           <Header as='h2' inverted content='Welcome to Lets Meetup' />
             <Button onClick={() => openModal(<LoginForm></LoginForm>)} size='huge' inverted>
               Login
             </Button>

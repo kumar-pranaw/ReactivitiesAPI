@@ -37,15 +37,30 @@ namespace API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+
+        public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt =>
             {
                 opt.UseLazyLoadingProxies();
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
+            ConfigureServices(services);
+        }
 
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(opt =>
+            {
+                opt.UseLazyLoadingProxies();
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+            ConfigureServices(services);
+        }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
@@ -111,8 +126,8 @@ namespace API
                                 {
                                     var accessToken = context.Request.Query["access_token"];
                                     var path = context.HttpContext.Request.Path;
-                                    
-                                    if(!string.IsNullOrEmpty(accessToken) && (path.StartsWithSegments("/chat")))
+
+                                    if (!string.IsNullOrEmpty(accessToken) && (path.StartsWithSegments("/chat")))
                                     {
                                         context.Token = accessToken;
                                     }
@@ -130,14 +145,36 @@ namespace API
             app.UseMiddleware<ErrorHandlingMiddleware>();
             if (env.IsDevelopment())
             {
-                app.UseDefaultFiles();
-                app.UseStaticFiles();
-                app.UseRouting();
-                app.UseCors("CorsPolicy");
+              
+            }
+            else
+            {
+
             }
 
-            app.UseHttpsRedirection();
 
+            //app.UseXContentTypeOptions();
+            //app.UseReferrerPolicy(opt => opt.NoReferrer());
+            //app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
+            //app.UseXfo(opt => opt.Deny());
+            //app.UseCsp(opt => opt
+            //        .BlockAllMixedContent()
+            //        .StyleSources(s => s.Self()
+            //            .CustomSources("https://fonts.googleapis.com", "sha256-F4GpCPyRepgP5znjMD8sc7PEjzet5Eef4r09dEGPpTs="))
+            //        .FontSources(s => s.Self().CustomSources("https://fonts.gstatic.com", "data:"))
+            //        .FormActions(s => s.Self())
+            //        .FrameAncestors(s => s.Self())
+            //        .ImageSources(s => s.Self().CustomSources("https://res.cloudinary.com", "blob:", "data:"))
+            //        .ScriptSources(s => s.Self().CustomSources("sha256-5As4+3YpY62+l38PsxCEkjB1R4YtyktBtRScTJ3fyLU="))
+            //    );
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseCors("CorsPolicy");
+
+
+           // app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
 
