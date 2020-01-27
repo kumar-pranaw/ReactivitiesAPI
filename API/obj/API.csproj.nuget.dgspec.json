@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -316,6 +316,10 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.9.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
