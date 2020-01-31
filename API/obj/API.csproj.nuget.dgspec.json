@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj": {}
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj": {
+    "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\API.csproj",
+        "projectPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\pranav.verma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\api\\obj\\",
+        "outputPath": "C:\\Users\\pranav.verma\\Documents\\ReactivitiesAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -83,6 +83,10 @@
             "NWebsec.AspNetCore.Middleware": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -319,7 +323,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[12.0.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

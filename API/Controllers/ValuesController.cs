@@ -1,20 +1,29 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Activities;
 using Domain;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
+using static Application.Activities.List;
 
 namespace DatingApp.API.Controllers
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
         private readonly DataContext _context;
-        public ValuesController(DataContext context)
+
+        private IMediator _mediator;
+        public ValuesController(DataContext context, IMediator mediator)
         {
+            this._mediator = mediator;
             this._context = context;
         }
 
