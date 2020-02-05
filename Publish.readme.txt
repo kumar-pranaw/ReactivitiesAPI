@@ -1,0 +1,8 @@
+Step 1:
+    #Build you solution and check if any error then resolve that
+    #Command: dotnet Build
+Step 2:
+    #Run the below command to publish your app to azure
+    #Command: dotnet publish -c Release -o publish --self-contained false ReactivitiesAPI.sln
+    #Go to azure section in vs code
+    #Click on Deploy to web app. Choose the path of publish folder

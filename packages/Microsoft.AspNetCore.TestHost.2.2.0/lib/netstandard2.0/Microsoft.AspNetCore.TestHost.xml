@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.TestHost</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.TestHost.ClientHandler">
+            <summary>
+            This adapts HttpRequestMessages to ASP.NET Core requests, dispatches them through the pipeline, and returns the
+            associated HttpResponseMessage.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.ClientHandler.#ctor(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Hosting.Server.IHttpApplication{Microsoft.AspNetCore.Hosting.Internal.HostingApplication.Context})">
+            <summary>
+            Create a new handler.
+            </summary>
+            <param name="pathBase">The base path.</param>
+            <param name="application">The <see cref="T:Microsoft.AspNetCore.Hosting.Server.IHttpApplication`1"/>.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            This adapts HttpRequestMessages to ASP.NET Core requests, dispatches them through the pipeline, and returns the
+            associated HttpResponseMessage.
+            </summary>
+            <param name="request"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.HttpContextBuilder.SendAsync(System.Threading.CancellationToken)">
+            <summary>
+            Start processing the request.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.AspNetCore.TestHost.RequestBuilder">
+            <summary>
+            Used to construct a HttpRequestMessage object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.#ctor(Microsoft.AspNetCore.TestHost.TestServer,System.String)">
+            <summary>
+            Construct a new HttpRequestMessage with the given path.
+            </summary>
+            <param name="server"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.And(System.Action{System.Net.Http.HttpRequestMessage})">
+            <summary>
+            Configure any HttpRequestMessage properties.
+            </summary>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.AddHeader(System.String,System.String)">
+            <summary>
+            Add the given header and value to the request or request content.
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.SendAsync(System.String)">
+            <summary>
+            Set the request method and start processing the request.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.GetAsync">
+            <summary>
+            Set the request method to GET and start processing the request.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.RequestBuilder.PostAsync">
+            <summary>
+            Set the request method to POST and start processing the request.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.TestServer.CreateRequest(System.String)">
+            <summary>
+            Begins constructing a request message for submission.
+            </summary>
+            <param name="path"></param>
+            <returns><see cref="T:Microsoft.AspNetCore.TestHost.RequestBuilder"/> to use in constructing additional request details.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.TestHost.TestServer.SendAsync(System.Action{Microsoft.AspNetCore.Http.HttpContext},System.Threading.CancellationToken)">
+            <summary>
+            Creates, configures, sends, and returns a <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>. This completes as soon as the response is started.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

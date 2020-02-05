@@ -310,5 +310,6 @@ C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\obj\Debug\netcoreapp3.0\API.pdb
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\NWebsec.AspNetCore.Core.dll
 C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\NWebsec.AspNetCore.Middleware.dll
-C:\Users\pranav.verma\Documents\ReactivitiesAPI\api\obj\Debug\netcoreapp3.0\API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\pranav.verma\Documents\ReactivitiesAPI\api\obj\Debug\netcoreapp3.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\System.Text.Encodings.Web.dll
+C:\Users\pranav.verma\Documents\ReactivitiesAPI\API\bin\Debug\netcoreapp3.0\System.Text.Json.dll

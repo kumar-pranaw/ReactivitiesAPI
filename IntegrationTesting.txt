@@ -1,0 +1,3 @@
+Create Unit Test Project Inside The Solution
+Install The Following Nuget Packages
+-- Microsoft.AspNetCor

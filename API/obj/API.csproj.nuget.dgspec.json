@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.5, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -83,10 +87,6 @@
             "NWebsec.AspNetCore.Middleware": {
               "target": "Package",
               "version": "[2.0.0, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -197,6 +197,9 @@
             }
           ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -319,15 +322,15 @@
           "dependencies": {
             "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[1.9.1, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[1.10.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[5.6.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -347,6 +350,9 @@
             }
           ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
